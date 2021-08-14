@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CakelustKE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Bootstrap Scripts -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Add additional CSS and JS in static file -->
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'cakelust/styles.css' %}">
+
+</head>
+<body>
+
+    <!--Contact us-->
+<div class="container contactus" id="contactus">
+    <h2 class="contacthd">Contact Us</h2>
+    <div class="row socialcont">
+        <div class="icon">
+            <a href="#"><image class="socialicon" src="{% static 'phone.png' %}"></image></a>
+            <p class="icontxt">Cellphone : 0721761891</p>
+        </div>
+        <div class="icon2">
+            <a href="https://www.instagram.com/cakelustke/?hl=en"><image class="socialicon" src="{% static 'instagram.png' %}"></image></a>
+            <p class="icontxt">Instagram :@cakelustke</p>
+        </div>
+    </div>
+    <div class="row socialcont">
+        <div class="icon">
+            <a href="https://www.facebook.com/Cake-Lust-KE-101381258498877/"><image class="socialicon" src="{% static 'facebook.png' %}"></image></a>
+            <p class="icontxt">Facebook : Cake Lust KE</p>
+        </div>
+        <div class="icon2">
+            <a href="#"><image class="socialicon" src="{% static 'email.png' %}"></image></a>
+            <p class="icontxt">Email : cakelustke@gmail.com</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<!--Homepage -->
+<div class="container homepage">
+    {% load static %}
+    <img src="{% static 'homepage.png' %}" class="img-responsive hmpgimg"/>
+</div> 
+
+<!--Gallery-->
+<div class="container" id="gallery">
+    <h2>Gallery</h2>
+    <div class="row">
+        {%load static%}
+        <div class="card">
+            <div class="card-body"><img src="{% static 'cake1.jpg' %}" class="images img-responsive"/></div>
+            <a href="{% url 'gallery' %}"><div class="card-footer">View More</div></a>
+        </div>
+        <div class="card">
+            <div class="card-body"><img src="{% static 'cake2.jpg' %}" class="images img-responsive"/></div>
+            <a href="{% url 'gallery' %}"><div class="card-footer">View More</div></a>
+        </div>
+        <div class="card">
+            <div class="card-body"><img src="{% static 'cake3.jpg' %}" class="images img-responsive"/></div>
+            <a href="{% url 'gallery' %}"><div class="card-footer">View More</div></a>
+        </div>
+        <div class="card">
+            <div class="card-body"><img src="{% static 'cake1.jpg' %}" class="images img-responsive"/></div>
+            <a href="{% url 'gallery' %}"><div class="card-footer">View More</div></a>
+        </div>
+        <div class="card">
+            <div class="card-body"><img src="{% static 'cake2.jpg' %}" class="images img-responsive"/></div>
+            <a href="{% url 'gallery' %}"><div class="card-footer">View More</div></a>
+        </div>
+        <div class="card">
+            <div class="card-body"><img src="{% static 'cake3.jpg' %}" class="images img-responsive"/></div>
+            <a href="{% url 'gallery' %}"><div class="card-footer">View More</div></a>
+        </div>
+    </div>
+</div>
+
+{% include "contactus.html" %}
+
+<!--Customer Review-->
+
+<div class="container">
+    <h2>Write a review</h2>
+    <div class="container reviewform">
+        <form class="form-inline" action="/action_page.php">
+            <div class="form-group">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Password:</label>
+              <input type="password" class="form-control" id="pwd">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+    </div>
+    <h5>Customer Reviews</h5>
+    <div class="container custreview">
+        <div class="container review">
+            <p>Emma Kamau</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+        <div class="container review">
+            <p>Emma Kamau</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+        <div class="container review">
+            <p>Emma Kamau</p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo 
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
