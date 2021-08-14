@@ -1,0 +1,153 @@
+/*Styling for navigation bar*/
+.navigationbar{
+    width: 70rem;
+}
+
+.logoimg{
+    height: 5rem;
+    width: 6rem;
+}
+
+.navbar{
+    background-color: white;
+    margin-left: 2.5rem;
+}
+
+a{
+    color: #FF00FF;
+    font-weight: bold;
+    font-size: large;
+}
+
+a:hover{
+    color:  #E0B0FF;
+    font-size: 1.5rem;
+}
+
+/*Styling for homepage - section one*/
+
+.hmpgimg{
+    width: 100%;
+}
+
+/*Styling for gallery - section two*/
+
+.images{
+    height: 16rem;
+    width: 18rem;
+}
+
+.card{
+    height: 24rem;
+    width: 21rem;
+    margin: 1rem;
+    align-items: center;
+}
+
+.card-footer{
+    background-color: white;
+    color: #FF00FF;
+}
+
+hr{
+    color: #FF00FF;
+    border: 8px solid;
+}
+
+/*Styling for customer review - section three*/
+.reviewform{
+    width: 100%;
+    text-align: center;
+}
+
+.review{
+    background-color: #FAE6FA;
+    padding: 0.5rem;
+}
+
+.custreview{
+    margin-top: 1rem;
+    overflow-y: scroll;
+    height: 20rem;
+    width: 100%;
+}
+
+.form-group{
+    margin: 1rem;
+}
+
+h2{
+    color: #FF00FF;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+h5{
+    color: #FF00FF;
+    font-weight: bold;
+    margin: 2rem 1rem;
+}
+
+.btn{
+    background-color: #FF00FF;
+    color: white;
+    font-weight: bold;
+}
+
+
+/*Styling for Contact Us - section four*/
+.contacthd{
+    color: white;
+    padding-top: 1rem;
+}
+
+.socialcont{
+    padding: 1rem;
+    align-items: center;
+}
+
+.socialicon{
+    height: 3rem;
+    width: 3rem;
+}
+
+.icon{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+.icon2{
+    margin-left: 6rem;
+    margin-top: 1rem;
+}
+
+.contactus{
+    background-color: #FF00FF;
+    color: white;
+    height: 24rem;
+    width: 100%;
+}
+
+.icontxt{
+    font-weight: bold;
+}
+
+/*Styling for Footer - section five*/
+.Footer{
+    background-color: #FF00FF;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 2rem;
+    height: 6rem;
+    padding: 1.5rem;
+}
+
+.footerone{
+    font-size: medium;
+}
+
+.footertwo{
+    font-size: small;
+}
