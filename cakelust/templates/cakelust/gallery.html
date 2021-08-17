@@ -2,4 +2,23 @@
 
 {% block content %}
 
+<div class="container">
+    <h2>Cake Your Day</h2>
+</div>
+<div class="container">
+    <table class="table">
+        <tbody>
+          <tr class="wrapper">
+            {% for cake in gallery %}
+            <td>
+                <img class="images img-responsive" src=" {{ cake.cakeimage.url }}" />
+            </td>
+            {% endfor %}
+          </tr>
+        </tbody>
+      </table>
+</div>
+
+{% include "contactus.html" %}
+
 {% endblock %}

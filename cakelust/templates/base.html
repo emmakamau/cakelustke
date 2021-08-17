@@ -16,10 +16,10 @@
   <link rel="stylesheet" type="text/css" href="{% static 'cakelust/styles.css' %}">
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<body>
 
-  <nav class="navbar navbar-expand-sm nav-light navigationbar ">
-    <a class="navbar-brand" href="#">
+  <nav class="navbar navbar-expand-sm nav-light navigationbar sticky-top">
+    <a class="navbar-brand" href="{% url 'home' %}">
       {% load static %}
       <img src="{% static 'cakelustlogo.jpg' %}" class="logoimg"/>
     </a>
