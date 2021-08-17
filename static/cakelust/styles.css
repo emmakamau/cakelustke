@@ -3,6 +3,10 @@
     width: 70rem;
 }
 
+.navbar-toggler{
+    color: #FF00FF;
+}
+
 .logoimg{
     height: 5rem;
     width: 6rem;
@@ -54,22 +58,35 @@ hr{
     border: 8px solid;
 }
 
+
 /*Styling for customer review - section three*/
+.reviewmain{
+    height: 30rem;
+}
+
 .reviewform{
     width: 100%;
-    text-align: center;
+    text-align: left;
+    margin-top: 1rem;
 }
 
 .review{
     background-color: #FAE6FA;
-    padding: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    width: 90%;
+}
+
+.revhd{
+    padding-top: 1rem;
+    text-align: left;
 }
 
 .custreview{
-    margin-top: 1rem;
     overflow-y: scroll;
     height: 20rem;
     width: 100%;
+    margin-left: 1rem;
 }
 
 .form-group{
@@ -92,6 +109,7 @@ h5{
     background-color: #FF00FF;
     color: white;
     font-weight: bold;
+    margin-left: 1rem;
 }
 
 
@@ -112,19 +130,13 @@ h5{
 }
 
 .icon{
-    margin-left: 1rem;
-    margin-top: 1rem;
-}
-
-.icon2{
-    margin-left: 6rem;
-    margin-top: 1rem;
+    margin-left: 3rem;
 }
 
 .contactus{
     background-color: #FF00FF;
     color: white;
-    height: 24rem;
+    height: 12rem;
     width: 100%;
 }
 
@@ -150,4 +162,28 @@ h5{
 
 .footertwo{
     font-size: small;
+}
+
+
+/*Styling for Gallery/Flavours/Pricelist*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 1rem;
+}
+
+.flavours{
+    height: 35rem;
+}
+
+.card-text{
+    padding: 1rem;
+}
+
+.pricelist{
+    height: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
