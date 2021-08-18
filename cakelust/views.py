@@ -52,3 +52,9 @@ def flavours(request):
         'cake':cake,
     }
     return render (request, 'cakelust/flavours.html', context=context)
+
+def order(request):
+
+    context = {
+    }
+    return render (request, 'cakelust/order.html', context=context)
