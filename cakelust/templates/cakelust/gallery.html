@@ -6,19 +6,17 @@
     <h2>Cake Your Day</h2>
 </div>
 <div class="container">
-    <table class="table">
-        <tbody>
-          <tr class="wrapper">
-            {% for cake in gallery %}
-            <td>
-                <img class="images img-responsive" src=" {{ cake.cakeimage.url }}" />
-            </td>
-            {% endfor %}
-          </tr>
-        </tbody>
-      </table>
+  <div class="row">
+    {% for cake in gallery %}
+    <div class="card gallerycard">
+      <img class="images img-responsive" src=" {{ cake.cakeimage.url }}" />
+      <div class="card-footer footer-gallery">{{ cake.cakename }}</div>
+    </div>
+    {% endfor %}
+  </div>
 </div>
 
 {% include "contactus.html" %}
+{% include "footer.html" %}
 
 {% endblock %}
