@@ -2,4 +2,20 @@
 
 {% block content %}
 
+<div class="container" id="gallery">
+    <h2>Yummy yummy Flavours</h2>
+    <div class="row">
+        {% for cake in cake %}
+        <div class="card flavours">
+            <h5 class="card-title">{{ cake.caketype }}</h5>
+            <div class="card-body"><img src="{{ cake.viewcake.url }}" class="images img-responsive"/></div>
+            <p class="card-text">{{ cake.description }}</p>
+            <a href="#"><div class="card-footer">Place An Order</div></a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+{% include "contactus.html" %}
+
 {% endblock %}

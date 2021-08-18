@@ -16,10 +16,9 @@
   <link rel="stylesheet" type="text/css" href="{% static 'cakelust/styles.css' %}">
 
 </head>
-<body data-spy="scroll" data-target=".navbar" data-offset="50">
-
-  <nav class="navbar navbar-expand-sm nav-light navigationbar ">
-    <a class="navbar-brand" href="#">
+<body>
+  <nav class="navbar navbar-expand-sm nav-light sticky-top">
+    <a class="navbar-brand" href="{% url 'home' %}">
       {% load static %}
       <img src="{% static 'cakelustlogo.jpg' %}" class="logoimg"/>
     </a>
@@ -51,17 +50,10 @@
   </nav>
 
   
-<div class="container">
-  {% block content %}
-
-  {% endblock %}
-</div>
-
-
-<div class="Footer">
-  <footer class="footerone">&copy2021 CakelustKE. All rights reserved.</footer>
-  <footer class="footertwo">Designed by Emmaculate Kamau</footer>
-</div>
-
+  <div class="container content-wrapper">
+    {% block content %}
+  
+    {% endblock %}
+  </div>
 </body>
 </html>
