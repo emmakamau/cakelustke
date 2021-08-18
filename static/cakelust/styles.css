@@ -1,11 +1,29 @@
 body{
     position: relative;
+    height: 100%;
 }
+
 
 /*Styling for navigation bar*/
 
-.navbar-toggler{
-    color: #FF00FF;
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
+.bg-iconnav {
+  background: #f0323d;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #FF00FF 0%, #E0B0FF 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #FF00FF 0%, #E0B0FF 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #FF00FF 0%, #E0B0FF 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF00FF', endColorstr='#e6366c', GradientType=0);
+  /* IE6-9 */
+  border-radius: 0;
+  padding: 10px;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 
 .logoimg{
@@ -36,6 +54,9 @@ a:hover{
 }
 
 /*Styling for gallery - section two*/
+.gallery{
+    text-align: center;
+}
 
 .images{
     height: 16rem;
@@ -54,6 +75,11 @@ a:hover{
     color: #FF00FF;
 }
 
+.footer-gallery{
+    padding: 2rem;
+    font-size: 28px;
+}
+
 hr{
     color: #FF00FF;
     border: 8px solid;
@@ -62,7 +88,7 @@ hr{
 
 /*Styling for customer review - section three*/
 .reviewmain{
-    height: 30rem;
+    height: 100%;
 }
 
 .reviewform{
@@ -87,7 +113,7 @@ hr{
     overflow-y: scroll;
     height: 20rem;
     width: 100%;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 .form-group{
@@ -112,6 +138,7 @@ h5{
     font-weight: bold;
     margin-left: 1rem;
 }
+
 
 
 /*Styling for Contact Us - section four*/
@@ -155,6 +182,7 @@ h5{
     margin-top: 2rem;
     width: 100%;
     padding: 1.5rem;
+    position: sticky;
 }
 
 .footerone{
@@ -167,10 +195,7 @@ h5{
 
 
 /*Styling for Gallery/Flavours/Pricelist*/
-.wrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+.gallerycard {
     padding: 1rem;
 }
 
@@ -183,7 +208,6 @@ h5{
 }
 
 .pricelist{
-    height: 40%;
     display: block;
     margin-left: auto;
     margin-right: auto;
