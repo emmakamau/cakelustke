@@ -29,7 +29,7 @@ def home(request):
 
 def gallery(request):
     
-    gallery = Gallery.objects.all().order_by('-id')
+    gallery = Gallery.objects.all().order_by('-id')[:10]
 
     context = {
         'gallery':gallery,
