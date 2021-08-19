@@ -47,6 +47,10 @@ a:hover{
     font-size: 1.5rem;
 }
 
+.order-link{
+    text-decoration: underline;
+}
+
 /*Styling for homepage - section one*/
 
 .hmpgimg{
@@ -246,9 +250,25 @@ h5{
     text-decoration: underline;
 }
 
+.order-btn{
+    background-color: #FF00FF;
+    border-radius: 8px;
+    border-color: #FAE6FA;
+    margin-bottom: 2rem;
+    width: 16rem;
+}
 
+.order-btn:hover{
+    color: white;
+    background-color: #D05FAD;
+}
 
+.order-paragraph{
+    margin: auto;
+}
 
-
+i{
+    font-weight: bold;
+}
 
 
