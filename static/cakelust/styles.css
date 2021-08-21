@@ -117,6 +117,8 @@ a:hover{
 .card-text{
     text-align: center;
     text-indent: 4px;
+    width: 35rem;
+    padding: 1rem;
 }
 
 .footer-gallery{
@@ -255,14 +257,8 @@ h5{
 
 .flavours{
     height: 40rem;
-}
-
-.flavourcard{
+    width: 35rem;
     justify-content: center;
-}
-
-.card-text{
-    padding: 1rem;
 }
 
 .pricelist{
