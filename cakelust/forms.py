@@ -10,10 +10,11 @@ class reviewsForm(forms.ModelForm):
         widgets={
             'custreview' : forms.Textarea(attrs={
                 'placeholder':'How was your experience?',
-                'rows' : 6,
-                'cols' : 50
+                'resize': 'both',
+                'overflow': 'auto',
             }),
             'name' : forms.TextInput(attrs={
-                'placeholder':'Type in your name'
+                'placeholder':'Type in your name',
+                'resize': 'both',
             })
         }
