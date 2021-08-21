@@ -1,25 +1,40 @@
-body{
+html,body{
     position: relative;
     height: 100%;
+    width: 100%;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: lighter;
+    background-color: #FAE6FA;
 }
 
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
 
 /*Styling for navigation bar*/
 
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css";
 .bg-iconnav {
-  background: #f0323d;
+  background: #FA86C4;
   /* Old browsers */
-  background: -moz-linear-gradient(top, #FF00FF 0%, #E0B0FF 100%);
+  background: -moz-linear-gradient(top, #FA86C4 0%, #E0B0FF 100%);
   /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #FF00FF 0%, #E0B0FF 100%);
+  background: -webkit-linear-gradient(top, #FA86C4 0%, #E0B0FF 100%);
   /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #FF00FF 0%, #E0B0FF 100%);
+  background: linear-gradient(to bottom, #FA86C4 0%, #E0B0FF 100%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FF00FF', endColorstr='#e6366c', GradientType=0);
   /* IE6-9 */
-  border-radius: 0;
+  border-color: #E0B0FF;
+  outline: none;
   padding: 10px;
+}
+
+.bg-iconnav:focus{
+    outline: none;
 }
 
 .navbar-toggler-icon {
@@ -29,21 +44,24 @@ body{
 .logoimg{
     height: 5rem;
     width: 6rem;
+    border: none;
+    border-radius: 1rem;
 }
 
 .navbar{
-    background-color: white;
+    background-color:#FAE6FA;
     width: 100%;
+    border: none;
 }
 
 a{
-    color: #FF00FF;
+    color: #FA86C4;
     font-weight: bold;
     font-size: large;
 }
 
 a:hover{
-    color:  #E0B0FF;
+    color: #FA86C4;
     font-size: 1.5rem;
 }
 
@@ -52,6 +70,11 @@ a:hover{
 }
 
 /*Styling for homepage - section one*/
+
+.homepage{
+    width: 100%;
+    height: 100%;
+}
 
 .hmpgimg{
     width: 100%;
@@ -64,29 +87,32 @@ a:hover{
 }
 
 .images{
-    height: 16rem;
-    width: 18rem;
+    height: 18rem;
+    width: 20rem;
 }
 
 .card{
     height: 24rem;
-    width: 21rem;
-    margin: 1rem;
+    width: 22rem;
+    margin: 8px;
     align-items: center;
+    border: none;
+    background-color: #FAE6FA;
 }
 
 .card-footer{
-    background-color: white;
-    color: #FF00FF;
+    color: #FA86C4;
+    background-color: #FAE6FA;
+    border: none;
 }
 
 .footer-gallery{
-    padding: 2rem;
+    padding: 0.5rem;
     font-size: 28px;
 }
 
 hr{
-    color: #FF00FF;
+    color: #FA86C4;
     border: 8px solid;
 }
 
@@ -103,7 +129,7 @@ hr{
 }
 
 .review{
-    background-color: #FAE6FA;
+    background-color: white;
     padding: 1rem;
     margin: 1rem;
     width: 90%;
@@ -126,19 +152,19 @@ hr{
 }
 
 h2{
-    color: #FF00FF;
+    color:#FA86C4;
     font-weight: bold;
     margin: 1rem;
 }
 
 h5{
-    color: #FF00FF;
+    color:#FA86C4;
     font-weight: bold;
     margin: 2rem 1rem;
 }
 
 .btn{
-    background-color: #FF00FF;
+    background-color:#FA86C4;
     color: white;
     font-weight: bold;
     margin-left: 1rem;
@@ -167,7 +193,7 @@ h5{
 }
 
 .contactus{
-    background-color: #FF00FF;
+    background-color:#FA86C4;
     color: white;
     height: 100%;
     width: 100%;
@@ -179,7 +205,7 @@ h5{
 
 /*Styling for Footer - section five*/
 .Footer{
-    background-color: #FF00FF;
+    background-color:#FA86C4;
     color: white;
     text-align: center;
     font-weight: bold;
@@ -208,6 +234,10 @@ h5{
     justify-content: center;
 }
 
+#gallery{
+    background-color: #FAE6FA;
+}
+
 .flavours{
     height: 35rem;
 }
@@ -231,7 +261,7 @@ h5{
 }
 
 .order-head1{
-    color: #FF00FF;
+    color: #FA86C4;
     text-align: center;
     padding: 1rem;
     font-weight: bolder;
@@ -239,19 +269,19 @@ h5{
 
 .order-head6{
     font-weight: bold;
-    color: #FF00FF;
+    color: #FA86C4;
     font-size: 16px;
 }
 
 .disclaimer{
     font-weight: bolder;
     font-size: xx-large;
-    color: #FF00FF;
+    color: #FA86C4;
     text-decoration: underline;
 }
 
 .order-btn{
-    background-color: #FF00FF;
+    background-color: #FA86C4;
     border-radius: 8px;
     border-color: #FAE6FA;
     margin-bottom: 2rem;
@@ -260,7 +290,7 @@ h5{
 
 .order-btn:hover{
     color: white;
-    background-color: #D05FAD;
+    background-color:#FA86C4;
 }
 
 .order-paragraph{
