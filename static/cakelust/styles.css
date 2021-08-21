@@ -1,5 +1,4 @@
 html,body{
-    position: relative;
     height: 100%;
     width: 100%;
     font-family: 'Shadows Into Light', cursive;
@@ -97,7 +96,7 @@ a:hover{
 }
 
 .images:hover{
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 .card{
