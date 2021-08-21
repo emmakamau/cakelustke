@@ -2,7 +2,7 @@
 
 {% block content %}
 
-<div class="container" id="gallery">
+<div class="container-fluid">
     <h2>Yummy yummy Flavours</h2>
     <div class="row">
         {% for cake in cake %}
@@ -10,7 +10,7 @@
             <h5 class="card-title">{{ cake.caketype }}</h5>
             <div class="card-body"><img src="{{ cake.viewcake.url }}" class="images img-responsive"/></div>
             <p class="card-text">{{ cake.description }}</p>
-            <a href="#"><div class="card-footer">Place An Order</div></a>
+            <a href="{% url 'placeorder' %}"><div class="card-footer">Place An Order</div></a>
         </div>
         {% endfor %}
     </div>
