@@ -5,11 +5,11 @@
 <div class="container">
     <h2>Cake Your Day</h2>
 </div>
-<div class="container">
-  <div class="row">
+<div class="container-fluid">
+  <div class="row gallerycard-1">
     {% for cake in gallery %}
     <div class="card gallerycard">
-      <img class="images img-responsive" src=" {{ cake.cakeimage.url }}" />
+      <img class="images img-responsive" src=" {{ cake.cakeimage.url }}" id="gallery" />
       <div class="card-footer footer-gallery">{{ cake.cakename }}</div>
     </div>
     {% endfor %}
