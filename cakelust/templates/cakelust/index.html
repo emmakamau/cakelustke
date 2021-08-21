@@ -3,17 +3,17 @@
 {% block content %}
 
 <!--Homepage -->
-<div class="container homepage">
+<div class="container-fluid homepage">
     {% load static %}
     <img src="{% static 'homepage.png' %}" class="img-responsive hmpgimg"/>
 </div> 
 
 <!--Gallery-->
-<div class="container" id="gallery">
+<div class="container-fluid" id="gallery">
     <h2>Gallery</h2>
     <div class="row gallery">
         {% for cake in gallery %}
-        <div class="card">
+        <div class="col- card">
             <div class="card-body"><img src="{{ cake.cakeimage.url }}" class="images img-responsive"/></div>
             <a href="{% url 'gallery' %}"><div class="card-footer">View More</div></a>
         </div>
