@@ -4,15 +4,14 @@ html,body{
     width: 100%;
     font-family: 'Shadows Into Light', cursive;
     font-weight: lighter;
+    letter-spacing: 2px;
     background-color: #FAE6FA;
 }
 
-@media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    [class*="col-"] {
-      width: 100%;
-    }
-  }
+div{
+    padding: 0;
+}
+
 
 /*Styling for navigation bar*/
 
@@ -45,7 +44,7 @@ html,body{
     height: 5rem;
     width: 6rem;
     border: none;
-    border-radius: 1rem;
+    border-radius: 4rem;
 }
 
 .navbar{
@@ -74,30 +73,41 @@ a:hover{
 .homepage{
     width: 100%;
     height: 100%;
+    padding: 0;
 }
 
 .hmpgimg{
     width: 100%;
+    height: 100%;
 }
 
 /*Styling for gallery - section two*/
 .gallery{
     text-align: center;
     justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 .images{
     height: 18rem;
     width: 20rem;
+    padding: 0;
+    transition: transform .2s;
+}
+
+.images:hover{
+    transform: scale(1.1);
 }
 
 .card{
     height: 24rem;
     width: 22rem;
-    margin: 8px;
+    min-width:fit-content;
     align-items: center;
     border: none;
     background-color: #FAE6FA;
+    padding: 0;
 }
 
 .card-footer{
@@ -106,13 +116,18 @@ a:hover{
     border: none;
 }
 
+.card-text{
+    text-align: center;
+    text-indent: 4px;
+}
+
 .footer-gallery{
     padding: 0.5rem;
     font-size: 28px;
 }
 
 hr{
-    color: #FA86C4;
+    color: white;
     border: 8px solid;
 }
 
@@ -189,13 +204,13 @@ h5{
 }
 
 .icon{
-    margin-left: 3rem;
+    margin-left: 4rem;
 }
 
 .contactus{
     background-color:#FA86C4;
     color: white;
-    height: 100%;
+    max-height: fit-content;
     width: 100%;
 }
 
@@ -209,6 +224,8 @@ h5{
     color: white;
     text-align: center;
     font-weight: bold;
+    font-family: sans-serif;
+    letter-spacing: normal;
     margin-bottom: 8px;
     margin-top: 2rem;
     width: 100%;
@@ -239,7 +256,11 @@ h5{
 }
 
 .flavours{
-    height: 35rem;
+    height: 40rem;
+}
+
+.flavourcard{
+    justify-content: center;
 }
 
 .card-text{
