@@ -11,10 +11,15 @@ class Cake(models.Model):
     def __str__(self):
         return self.caketype
 
-
 class Gallery(models.Model):
     cakename = models.ForeignKey('Cake', on_delete=models.SET_NULL, null=True)
     cakeimage = models.ImageField(blank=False,upload_to='media')
+
+    def __str__(self):
+        return self.cakename
+
+class Pricelist(models.Model):
+    pricelist = models.ImageField(blank=False,upload_to='media')
 
 
 class Review(models.Model):

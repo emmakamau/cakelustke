@@ -16,7 +16,7 @@ def home(request):
         if form.is_valid():
             form = form.save()
 
-            messages.success(request, "Account created successfully")
+            messages.success(request, "Thank you for your comment.")
             return redirect('home')
 
     context = {
@@ -39,7 +39,10 @@ def gallery(request):
 
 def priceguide(request):
 
+    pricelist = Pricelist.objects.all().order_by('-id')[:1]
+
     context = {
+        'pricelist':pricelist,
     }
     return render (request, 'cakelust/priceguide.html', context=context)
 
