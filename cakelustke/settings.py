@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-r71%+$hat$f-ggmux#%pa3yajpa97!0tpqhz0ho$+5th9^eimu
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['cakelust.herokuapp.com', '127.0.0.1']
+ALLOWED_HOSTS = ['cakelustke.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
