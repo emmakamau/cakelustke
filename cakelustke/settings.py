@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'cakelustke.wsgi.application'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
 import dj_database_url
-POSTGRES_URL = "HEROKU_POSTGRESQL_cakelustke_URL"
+POSTGRES_URL = "HEROKU_POSTGRESQL_CAKELUSTKE_URL"
 DATABASES = {'default': dj_database_url.config(default=os.environ[POSTGRES_URL])}
 
 # Password validation
