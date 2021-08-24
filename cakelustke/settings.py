@@ -76,18 +76,9 @@ WSGI_APPLICATION = 'cakelustke.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        #'ENGINE': 'django.db.backends.sqlite3',
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'cakelustke',
-        'USER': 'emmakamau',
-        'PASSWORD':'cake@21lust',
-        'HOST':'',
-        'PORT':'5432',
-    }
-}
-
+import dj_database_url
+POSTGRES_URL = "HEROKU_POSTGRESQL_cakelustke_URL"
+DATABASES = {'default': dj_database_url.config(default=os.environ[POSTGRES_URL])}
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
