@@ -83,7 +83,7 @@ DATABASES = {
         'NAME': 'cakelustke',
         'USER': 'emmakamau',
         'PASSWORD':'cake@21lust',
-        'HOST':'localhost',
+        'HOST':'',
         'PORT':'5432',
     }
 }
