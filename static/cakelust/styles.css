@@ -50,6 +50,8 @@ div{
     background-color:#FAE6FA;
     width: 100%;
     border: none;
+    position: fixed;
+    overflow: hidden;
 }
 
 a{
@@ -95,7 +97,7 @@ a:hover{
 }
 
 .images:hover{
-    transform: scale(1.15);
+    transform: scale(1.05);
 }
 
 .card{
@@ -239,8 +241,13 @@ h5{
 
 .footertwo{
     font-size: small;
+    color: white;
 }
 
+.footertwo :hover{
+    color: white;
+    font-size: medium;
+}
 
 /*Styling for Gallery/Flavours/Pricelist*/
 .gallerycard {
@@ -256,9 +263,13 @@ h5{
 }
 
 .flavours{
-    height: 40rem;
-    width: 35rem;
+    height: 50%;
+    width: 50%;
     justify-content: center;
+}
+
+.flav-footer{
+    text-decoration: underline;
 }
 
 .pricelist{
