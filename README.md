@@ -1,3 +1,3 @@
 # cakelustke
 
-https://cakelustke.herokuapp.com/cakelust/
+cakelust.co.ke
