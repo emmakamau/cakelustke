@@ -1,3 +1,3 @@
 # cakelustke
 
-www.cakelust.co.ke
+http://cakelust.co.ke
